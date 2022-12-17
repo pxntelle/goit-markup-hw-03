@@ -1,0 +1,175 @@
+:root {
+  /* colors */
+
+  --primary-brand: #4d5ae5;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+
+  /* fonts */
+  --font-main: "Roboto", sans-serif;
+  --font-logo: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: var(--dark);
+  font-family: var(--font-main);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* .link {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+  } */
+
+.logo {
+  font-family: var(--font-logo);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.3;
+  color: var(--primary-brand);
+}
+
+.logo-accent {
+  color: var(--dark);
+}
+
+.header-link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--text);
+}
+
+.header-link:active {
+  color: var(--primary-brand);
+}
+
+.header-contact {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--primary-brand);
+}
+
+.hero {
+  background: var(--dark);
+}
+
+.hero-header {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1;
+  color: #fff;
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #fff;
+  background-color: var(--primary-brand);
+  cursor: pointer;
+  padding: 16px 32px;
+}
+
+/* .hero-button:hover,
+.hero-button:focus {
+ніяких змін?
+} */
+
+.hero-button:active {
+  background-color: #404bbf;
+}
+
+/* нижче - стилі для всіх класів заголовків */
+
+.features-header,
+.team-name,
+.project-header {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.features-description,
+.team-position,
+.project-description {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.section-header {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.footer {
+  background: var(--dark);
+}
+
+.footer-logo-accent {
+  color: var(--light);
+}
+
+.footer-text {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--accent);
+}
+
+.menu-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-brand);
+  background-color: var(--light);
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  color: #fff;
+  background-color: var(--primary-brand);
+}
+
+/* .menu-button:active {
+  ніяких змін?
+} */
