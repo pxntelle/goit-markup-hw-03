@@ -333,7 +333,7 @@ t {
 }
 
 .all-projects-list .item {
-  flex-basis: calc((100% - 2 * var(--gap24)) / 3);
+  flex-basis: auto;
   box-shadow: var(--shadow-third);
   overflow: hidden;
 }
