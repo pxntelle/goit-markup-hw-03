@@ -334,7 +334,7 @@ t {
 
 .all-projects-list .item {
   flex-basis: auto;
-  box-shadow: var(--shadow-third);
+  border: 1px solid var(--accent);
   overflow: hidden;
 }
 
@@ -342,5 +342,4 @@ t {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-  border: 1px solid var(--accent);
 }
