@@ -27,15 +27,85 @@ a {
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
-/* .link {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: none;
-  } */
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.site-nav,
+.header-contacts,
+.header-nav,
+.main-nav,
+.list-features,
+.list-services,
+.list-team,
+.portfolio-menu,
+.all-projects-list {
+  display: flex;
+}
+
+/* Header  */
+
+.page-header {
+  border-bottom: 1px solid var(--accent);
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-nav,
+.main-nav {
+  align-items: center;
+}
+
+.site-nav .item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.header-contacts .item + .item {
+  margin-left: 40px;
+}
 
 .logo {
   font-family: var(--font-logo);
@@ -43,6 +113,7 @@ ul {
   font-size: 18px;
   line-height: 1.3;
   color: var(--primary-brand);
+  margin-right: 76px;
 }
 
 .logo-accent {
@@ -67,6 +138,16 @@ ul {
   color: var(--primary-brand);
 }
 
+.header-contacts {
+  margin-left: auto;
+}
+
+/* .site-nav,
+.header
+t {
+  margin-left: 40px;
+} */
+
 .header-contact {
   font-family: inherit;
   font-size: 16px;
@@ -79,8 +160,12 @@ ul {
   color: var(--primary-brand);
 }
 
+/* Main */
+
 .hero {
   background: var(--dark);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-header {
@@ -89,6 +174,9 @@ ul {
   font-size: 56px;
   line-height: 1;
   color: #fff;
+  text-align: center;
+  width: 494px;
+  margin: 0 auto 48px;
 }
 
 .hero-button {
@@ -98,20 +186,40 @@ ul {
   line-height: 1.1;
   color: #fff;
   background-color: var(--primary-brand);
-  cursor: pointer;
-  padding: 16px 32px;
-}
 
-/* .hero-button:hover,
-.hero-button:focus {
-ніяких змін?
-} */
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 
 .hero-button:active {
   background-color: #404bbf;
 }
 
-/* нижче - стилі для всіх класів заголовків */
+.section-header {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.features,
+.illustrations,
+.our-team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.illustrations {
+  padding-top: 0;
+}
+
+/* titles */
 
 .features-header,
 .team-name,
@@ -120,7 +228,10 @@ ul {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
+
+/* descriptions */
 
 .features-description,
 .team-position,
@@ -131,15 +242,39 @@ ul {
   color: var(--text);
 }
 
-.section-header {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 1.1;
+.list-features .item + .item,
+.list-services .item + .item,
+.list-team .item + .item {
+  margin-left: 24px;
 }
+
+.list-features .item {
+  width: 264px;
+}
+
+.our-team {
+  background-color: var(--light);
+}
+
+.team-bio {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.list-team .item {
+  background-color: #fff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Footer */
 
 .footer {
   background: var(--dark);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo-accent {
@@ -151,6 +286,23 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   color: var(--accent);
+  margin-top: 16px;
+  width: 264px;
+}
+
+/* Portfolio main */
+
+.portfolio {
+  padding-top: 96px;
+}
+
+.portfolio-menu {
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.portfolio-menu .item + .item {
+  margin-left: 24px;
 }
 
 .menu-button {
@@ -158,9 +310,10 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
   color: var(--primary-brand);
   background-color: var(--light);
-  cursor: pointer;
   padding: 12px 24px;
 }
 
@@ -168,8 +321,26 @@ ul {
 .menu-button:focus {
   color: #fff;
   background-color: var(--primary-brand);
+  border: 1px solid transparent;
 }
 
-/* .menu-button:active {
-  ніяких змін?
-} */
+.all-projects-list {
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  margin-bottom: 120px;
+}
+
+.all-projects-list .item {
+  flex-basis: calc((100% - 2 * var(--gap24)) / 3);
+  box-shadow: var(--shadow-third);
+  overflow: hidden;
+}
+
+.project-bio {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid var(--accent);
+}
