@@ -113,6 +113,9 @@ button {
   font-size: 18px;
   line-height: 1.3;
   color: var(--primary-brand);
+}
+
+.main-nav .logo {
   margin-right: 76px;
 }
 
@@ -141,12 +144,6 @@ button {
 .header-contacts {
   margin-left: auto;
 }
-
-/* .site-nav,
-.header
-t {
-  margin-left: 40px;
-} */
 
 .header-contact {
   font-family: inherit;
@@ -325,15 +322,14 @@ t {
 }
 
 .all-projects-list {
-  justify-content: center;
+  /* justify-content: center; */
   flex-wrap: wrap;
   row-gap: 48px;
-  column-gap: 24px;
+  column-gap: 20px;
   margin-bottom: 120px;
 }
 
 .all-projects-list .item {
-  flex-basis: auto;
   border: 1px solid var(--accent);
   overflow: hidden;
 }
